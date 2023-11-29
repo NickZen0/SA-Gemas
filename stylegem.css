@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    background-image: url(thumb-1920-854072.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    font-family: 'Times New Roman', Times, serif;
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+}
+#texto{
+    width:200px;
+    height:200px;
+    border:2px solid black;
+    padding:10px;
+    box-sizing: border-box;
+}
+.gem{
+    background-color:darkorange;
+    font-family: 'Times New Roman', Times, serif;
+}
+.transgenic{
+    font-family: 'Times New Roman', Times, serif;
+}

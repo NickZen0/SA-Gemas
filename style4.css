@@ -1,0 +1,322 @@
+@font-face {
+  font-family: "ovo1";
+  src: local(RobotoMono-Bold) ,url(RobotoMono-Bold.ttf);
+}
+/* Estilos gerais para o body e tabela */
+body {
+    /* Fundo gradiente para o body */
+    background-image: linear-gradient(to bottom, rgb(138, 30, 240), rgb(167, 2, 79));
+    font-family: "ovo1";
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+table {
+    /* Estilos para a tabela */
+    width: 30%;
+    margin: auto;
+}
+
+dl {
+    /* Alinhamento central para a descrição */
+    font-family: "ovo1";
+    text-align: center;
+}
+
+td,
+th,
+tr {
+    /* Estilos para as células da tabela */
+    border: 2px solid #04ebf3;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Estilos para a logo */
+.logo {
+    /* Estilos para a logo */
+    margin-top: 1%;
+    width: 10%;
+    height: 10%;
+}
+
+/* Estilos para os botões e modal novo aluno */
+#modalNovoAluno button,
+#btnNovoAluno {
+    /* Estilos para os botões e o botão Novo Aluno */
+    background-color: #04ebf3;
+    color: #000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#modalNovoAluno button:hover,
+#btnNovoAluno:hover {
+    /* Efeito hover para os botões e o botão Novo Aluno */
+    background-color: white;
+}
+
+/* Estilos para o modal */
+.modal {
+    /* Estilos gerais para o modal */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para o conteúdo do modal de informações do aluno */
+#myModal .modal-content {
+    /* Estilos para o conteúdo do modal de informações do aluno */
+    position: fixed;
+    background-color: #fefefe;
+    width: 100%;
+}
+
+/* Estilos para o conteúdo do modal de novo aluno */
+#modalNovoAluno .modal-content-novo-aluno {
+    /* Estilos para o conteúdo do modal de novo aluno */
+    position: fixed;
+    top: 0;
+    background-color: #fefefe;
+    width: 100%;
+}
+
+/* Estilos para o botão Fechar */
+.close {
+    /* Estilos para o botão Fechar */
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    /* Efeito hover para o botão Fechar */
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para o cabeçalho, corpo e rodapé do modal */
+.modal-header,
+.modal-body,
+.modal-footer {
+    /* Estilos para o cabeçalho, corpo e rodapé do modal */
+    padding: 2px 16px;
+    background-color: #f7879a;
+    color: white;
+}
+
+/* Adicionar Animação */
+@-webkit-keyframes slideIn {
+
+    /* Animação de slideIn para o modal */
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+
+    /* Animação de slideIn para o modal */
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+
+    /* Animação de fadeIn para o modal */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+
+    /* Animação de fadeIn para o modal */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+#btnNovoAluno {
+    position: relative;
+    padding: 12px 35px;
+    background: #04ebf3;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all .3s ease-in-out;
+  }
+  
+  #btnstar-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  #btnstar-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  #btnstar-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  #btnstar-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  #btnstar-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  #btnstar-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s ease;
+  }
+  
+  button:hover {
+    background: transparent;
+    color: #FEC195;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  #btnNovoAluno:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  #btnNovoAluno:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  #btnNovoAluno:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  #btnNovoAluno:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  #btnNovoAluno:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  #btnNovoAluno:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #FFFDEF
+  }
